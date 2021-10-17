@@ -12,4 +12,4 @@ export PS1="\[\033[0;95m\]\!\[\033[0;92m\]\$(parse_git_branch) \w -> \[\033[0m\]
 
 # commands
 alias la="ls -al"
-alias cls="clear"
+alias cr="clear"
