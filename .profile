@@ -60,6 +60,6 @@ alias hs="history"
 alias sep=" &  disown"
 
 # Exports
-export PS1="\[\033[0;95m\]\!\[\033[0;92m\]\$(parse_git_branch) \w -> \[\033[0m\] "  # "<line number> <git branch> <current location> -> "
+export PS1="${B_MAGENTA}\!${B_GREEN}\$(parse_git_branch) \w -> ${NC} "  # "<line number> <git branch> <current location> -> "
 export HISTFILESIZE=10000
 
