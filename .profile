@@ -29,27 +29,27 @@ parse_git_branch() {
 # Functions to start programs, and automatic disown so that when you close the ternimal, the program does not close.
 # format: <name> <directory>
 rider() {
-    echo -e "Starting Program: Jetbrains Rider"
+    echo -e "${B_BLUE}Starting Program: ${B_WHITE}Jetbrains Rider"
     C:/Program\ Files/JetBrains/JetBrains\ Rider\ 2020.3.3/bin/rider64.exe ${1} & disown
 }
 
 webstorm() {
-    echo "Starting Program: Jetbrains WebStorm"
+    echo "${B_BLUE}Starting Program: ${B_WHITE}Jetbrains WebStorm"
     C:/Program\ Files/JetBrains/WebStorm\ 2020.3.3/bin/webstorm64.exe ${1} & disown
 }
 
 pycharm() {
-    echo "Starting Program: Jetbrains PyCharm"
+    echo "${B_BLUE}Starting Program: ${B_WHITE}Jetbrains PyCharm"
     C:/Program\ Files/JetBrains/PyCharm\ 2020.3.3/bin/pycharm64.exe ${1} & disown
 }
 
 idea() {
-    echo "Starting Program: Jetbrains IntelliJ IDEA"
+    echo "${B_BLUE}Starting Program: ${B_WHITE}Jetbrains IntelliJ IDEA"
     C:/Program\ Files/JetBrains/IntelliJ\ IDEA\ 2020.3.2/bin/idea64.exe ${1} & disown
 }
 
 goland() {
-    echo "Starting Program: Jetbrains GoLand"
+    echo "${B_BLUE}Starting Program: ${B_WHITE}Jetbrains GoLand"
     C:/Program\ Files/JetBrains/GoLand\ 2021.2.2/bin/goland64.exe ${1} & disown
 }
 
