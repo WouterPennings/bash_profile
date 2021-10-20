@@ -2,6 +2,25 @@
 # wouterpennings@gmail.com
 # github.com/WouterPennings
 
+# Color Constants
+BLACK='\033[0;30m'
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[0;33m'
+BLUE='\033[0;34m'
+MAGENTA='\033[0;35m'
+CYAN='\033[0;36m'
+WHITE='\033[0;37m'
+B_BLACK='\033[0;90m'
+B_RED='\033[0;91m'
+B_GREEN='\033[0;92m'
+B_YELLOW='\033[0;93m'
+B_BLUE='\033[0;94m'
+B_MAGENTA='\033[0;95m'
+B_CYAN='\033[0;96m'
+B_WHITE='\033[0;97m'
+NC='\033[0m'
+
 # Functions
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
@@ -10,7 +29,7 @@ parse_git_branch() {
 # Functions to start programs, and automatic disown so that when you close the ternimal, the program does not close.
 # format: <name> <directory>
 rider() {
-    echo "Starting Program: Jetbrains Rider"
+    echo -e "Starting Program: Jetbrains Rider"
     C:/Program\ Files/JetBrains/JetBrains\ Rider\ 2020.3.3/bin/rider64.exe ${1} & disown
 }
 
@@ -43,3 +62,4 @@ alias sep=" &  disown"
 # Exports
 export PS1="\[\033[0;95m\]\!\[\033[0;92m\]\$(parse_git_branch) \w -> \[\033[0m\] "  # "<line number> <git branch> <current location> -> "
 export HISTFILESIZE=10000
+
